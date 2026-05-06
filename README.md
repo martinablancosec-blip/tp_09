@@ -1,4 +1,4 @@
-Control de Temperatura
+Control de Temperatura:
 Aplicación simple en Python para monitorear la temperatura de un equipo industrial.
 Funcionamiento:
 - Mayor a 80°C → Alarma
