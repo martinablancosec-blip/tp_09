@@ -6,14 +6,17 @@ Aplicación simple en Python para monitorear la temperatura de un equipo industr
 
 - Detecta sobrecalentamiento
 - Genera alarma si la temperatura supera los 80°C
-- Valida errores del sensor
-- Detecta temperaturas inválidas
+- Valida errores de sensor
 
 ## Reglas del sistema
 
 - Temperatura > 80°C → ALARMA
 - Temperatura <= 80°C → NORMAL
+ feacture-sensor-validation
 - Temperaturas negativas → Error del sensor
+
+- Temperaturas negativas → Error de lectura
+
 
 ## Archivos
 
@@ -21,9 +24,11 @@ Aplicación simple en Python para monitorear la temperatura de un equipo industr
 - `temperature.py` → lógica del sistema
 - `tests/` → pruebas automáticas
 
+
 ## Validaciones
 
 El sistema evita lecturas inválidas del sensor y genera excepciones cuando la temperatura ingresada es incorrecta.
+
 
 ## Autor
 
