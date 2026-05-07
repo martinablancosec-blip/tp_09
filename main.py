@@ -1,12 +1,12 @@
-from temperature import isoverheating
+from temperature import is_overheating
 
 try:
     temp = float(input("Ingrese temperatura: "))
 
-    if isoverheating(temp):
-        print("alarma: Temperatura alta")
+    if is_overheating(temp):
+        print("⚠️ ALARMA: Temperatura alta")
     else:
-        print("temperatura normal")
+        print("✅ Temperatura normal")
 
 except ValueError:
-    print("error: ingreso inválido")
+    print("❌ Error: ingreso inválido")
