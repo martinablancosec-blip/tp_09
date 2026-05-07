@@ -1,12 +1,12 @@
 import pytest
-from temperature import isoverheating
+from temperature import is_overheating
 
 def test_high_temperature():
-    assert isoverheating(90) is True
+    assert is_overheating(90) is True
 
 def test_normal_temperature():
-    assert isoverheating(60) is False
+    assert is_overheating(60) is False
 
 def test_invalid_temperature():
     with pytest.raises(ValueError):
-        isoverheating(-5)
+        is_overheating(-5)
